@@ -68,6 +68,13 @@
 				<!-- Home page -->
 				<%@include file="contact.jsp"%>
 			</c:if>
+
+			<!-- Load only when the user click Contact   -->
+			<c:if
+				test="${userClickAllProducts == true or userClickCategoryProducts == true }">
+				<!-- Home page -->
+				<%@include file="listProducts.jsp"%>
+			</c:if>
 		</div>
 
 		<!-- Footer -->
